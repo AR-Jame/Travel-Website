@@ -1,0 +1,500 @@
+*{
+    font-family: "mulish";
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section{
+    margin: 80px 0;
+}
+button{
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FF5400;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+i{
+    padding: 0 5px;
+}
+
+/* Header section */
+header{
+    margin: auto 10%;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>div, 
+nav ol,
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+nav>div>img,
+ nav>div>h1,
+ nav li{
+    padding: 15px;
+    cursor: pointer;
+    transition: all .30s;
+}
+nav li:hover{
+    color: #FF5400;
+}
+header h1,
+.footer-logo{
+    font-size: 35px;
+    font-weight: 800;
+}
+header h1>span,
+.footer-logo span{
+    color: #FF5400;
+}
+.hero{
+    position: relative;
+}
+.hero-img img{
+    width:100%;
+    height: auto;
+}
+.hero-text{
+    top: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.381), rgba(0, 0, 0, 0.01));
+}
+.hero-text h2{
+    font-size: 60px;
+    padding-top: 100px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.hero-text p{
+    opacity: .7;
+    padding: 0 500px;
+    margin-bottom: 30px;
+}
+.hero-input{
+    width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+.hero-input input, select{
+    font-size: 18px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    text-indent: 10px;
+    flex: 1;
+}
+.hero-input button{
+    flex: 1;
+}
+/* header end */
+
+main{
+    margin: 0 10%;
+}
+
+/* popular tour section */
+
+
+.popular-containar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+}
+.popular-containar>div{
+    flex: 1;
+}
+.popular-containar h3,
+ .destination h3,
+  .reason h3,
+  .deal-container h3
+{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+.popular-containar p{
+    margin: 20px 0;
+    color: #2b2b38b9;
+
+}
+.popular-containar li{
+    list-style-type: disc;
+    color: #2b2b38b1;
+    margin: 30px 0;
+}
+/* destination style */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "  image1   image1   image1    image7  image7   image7   "
+    "  image2   image3   image3 image3   image3 image6  "
+    "  image4 image4 image4   image4 image5 image5 "
+    ;
+    gap: 10px;
+}
+
+.image1{
+    grid-area: image1;
+}
+.image2{
+    grid-area: image2;
+}
+.image3{
+    grid-area: image3;
+}
+.image4{
+    grid-area: image4;
+}
+.image5{
+    grid-area: image5;
+}
+.image6{
+    grid-area: image6;
+}
+.image7{
+    grid-area: image7;
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.destination h3{
+    text-align: center;
+}
+.destination p,
+ .reason-p,
+ .deal-container > p{
+    opacity: .8;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 400px;
+    margin-bottom: 60px;
+}
+/* Reason section  */
+.reason h3{
+    text-align: center;
+}
+.card-containar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    width: 30%;
+    background-color: #fcf6f0;
+    padding: 30px 50px;
+    border-radius: 8px;
+}
+.card img{
+    width: 100px;
+    height: auto;
+    margin: 10px 20px;
+}
+.card h5{
+    font-size: 25px;
+    margin: 0 0 20px;
+}
+.card2{
+    background-color: #e1f5fa;
+}
+.card3{
+    background-color: #fef6f6;
+}
+
+/* Deal section style */
+.deal img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.deal{
+    position: relative;
+    margin: 30px 0;
+}
+.deal-container h3{
+    text-align: center;
+}
+.deal-box{
+    background-color: rgba(255, 255, 255, 0.711);
+    width: 600px;
+    padding: 80px 35px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+}
+.left-deal{
+    left: 100px;
+}
+.deal-box-top{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 20px;
+}
+.deal-box-top i{
+    color: #FF5400;
+}
+.deal-box h5{
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px 0 15px;
+}
+.description{
+    padding: 0 150px 0 0 ;
+    color: rgba(0, 0, 0, 0.609);
+    font-weight: 600;
+    line-height: 1.6;
+}
+.price{
+    color: #FF5400;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.deal-btn{
+    text-align: center;
+}
+
+/* advertise section style */
+.ytube iframe{
+    border-radius: 12px;
+    width: 100%;
+    height: 400px;
+}
+.advartize{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.advartize > div{
+    flex: 1;
+}
+.advartize h3{
+    font-size: 35px;
+    font-weight: 900;
+    padding: 0 300px 0 0;
+    margin: 20px 0 ;
+}
+.advartize p{
+    font-size: 18px;
+    margin: 20px 0;
+    opacity: .8;
+}
+.advartize ul{
+    padding-left: 20px;
+}
+.advartize li{
+    list-style-type: disc;
+    font-size: 18px;
+    margin: 15px;
+}
+.advartize button{
+    margin: 20px 0;
+}
+
+/* Newsletter section */
+
+.inputt{
+    border: 1px solid #FF5400;
+    border-radius: 8px;
+    padding: 30px;
+}
+.inputt h4{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+hr{
+    margin: 20px 0 ;
+}
+
+.inputt input{
+    display: block;
+    margin: 20px;
+    font-size: 18px;
+    width:80%;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+}
+.inputt input[type="submit"]{
+    background-color: #FF5400;
+    color: white;
+    width: 85%;
+}
+.newsletter{
+    display: flex;
+    gap: 20px;
+}
+.newsletter > div{
+    flex: 1;
+}
+.tooltip{
+    background-color: #FF5400;
+    display: inline-block;
+    padding: 30px 30px;
+    color: white;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    transform: rotate(-30deg);
+}
+.tooltip h5{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+.tooltip p{
+    font-size: 45px;
+    font-weight: 700;
+}
+.parent{
+    position: relative;
+}
+
+/* Footer section */
+footer{
+    background-color: #f3f3f3;
+    width: 100%;
+    padding: 50px 0;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px 0;
+}
+.icon i{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.084);
+    padding: 15px;
+    border-radius: 50%;
+}
+hr{
+    opacity: .2;
+}
+
+footer p{
+    text-align: center;
+    padding: 0 350px;
+}
+/* responsive style */
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+    header,
+    main{
+        margin:0  5%;
+    }
+    nav ol{
+        display: none;
+    }
+    nav{
+        width: 100%;
+    }
+    .hero-img img{
+        height: 600px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .hero-input,
+    .popular-containar,
+    .deal-box-top,
+    .advartize,
+    .newsletter
+    {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-text p,
+     .hero-text h2,
+     .hero-input,
+     .destination p,
+     .reason-p,
+     .description,
+     .deal-container p,
+     .advartize p,
+     .advartize h3,
+     footer p{
+        padding: 5px;
+    }
+    .hero-input input,
+     select,
+      .hero-btn,
+      .deal-box{
+        width: 70%;
+    }
+    .popular-containar img,
+    .card,
+    .newsletter img{
+        width: 100%;
+    }
+    .grid{
+        display: block;
+    }
+    .deal-box{
+        bottom: 20px;
+        left: 20px;
+        padding: 20px 35px;
+    }
+    .ytube iframe{
+        width: 110%;
+        height: 200px;
+        margin-left: -10px;
+    }
+    .tooltip{
+        width: 40%;
+    }
+    .tooltip p{
+        font-size: 16px;
+    }
+    .tooltip h5{
+        font-size: 18px;
+    }
+
+
+}
